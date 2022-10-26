@@ -11,17 +11,17 @@
 % \textheight=9.0in
 % \headsep=0.25in
 
-\title{Load Balancing: The Secret to High-Performance Implementations on GPU}
+\title{How \underline{Not} to Program Your GPUs.}
 \author{Muhammad Osama}
-\date{November 1\textsuperscript{st}, 2022}
+% \date{November 1\textsuperscript{st}, 2022}
 
 \begin{document}
 \maketitle	
 
-Fine-grained workload and resource balancing is the key to high performance for regular and irregular computations on the GPUs. This seminar will present my dissertation work titled \emph{``Load Balancing on the GPU''}, a GPU load-balancing programming model for fine-grained computations.
+This seminar is a direct result of my dissertation work titled ``Load Balancing on the GPU,'' a GPU-based load-balancing programming model for fine-grained computations. This talk is intended as a tutorial, in which I will present lessons learned on how \emph{not} to program a GPU. I will focus on three key aspects: performance, program abstractions and software engineering, and together we will build the fastest General Matrix-Multiplication (GEMM) kernel, ever.
 
-I will first present the proposed abstraction for irregular workloads that decouples load balancing from work processing and aims to support both static and dynamic schedules with a programmable interface to implement new load-balancing schedules. Prior to my work, the only way to unleash the GPU's potential on irregular problems has been to workload-balance through application-specific, tightly coupled load-balancing techniques. With the open-source framework for load-balancing, we hope to improve programmers' productivity when developing irregular-parallel algorithms on the GPU, and also improve the overall performance characteristics for such applications by allowing a quick path to experimentation with a variety of existing load-balancing techniques.
-
-Using the insights from load-balancing irregular workloads, I will then show how we build Stream-K, a work-centric parallelization of matrix multiplication (GEMM), and related computations in dense linear algebra. Whereas contemporary decompositions are primarily tile-based, our method operates by partitioning an even share of the aggregate inner loop iterations among physical processing elements. This provides a near-perfect utilization of computing resources (resource balancing), regardless of how efficiently the output tiling for any given problem quantizes across the underlying processing elements. Finally, I will discuss future research directions on GPU load balancing.
+% Memory is everything, but load-balancing is better.
+% Beautiful abstractions and how to build them.
+% Code that lasts.
 
 \end{document}
