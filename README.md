@@ -1,4 +1,9 @@
-# Muhammad Osama's Exit Seminar
+# How NOT to Program Your GPUs [[PDF](https://github.com/neoblizz/Osama-Exit-Seminar/blob/main/how_not_to_program_your_gpus.pdf)] [[PPT](https://github.com/neoblizz/Osama-Exit-Seminar/blob/main/how_not_to_program_your_gpus.pptx)]
+
+This seminar is a direct result of my dissertation work titled "Load Balancing on the GPU," a GPU-based load-balancing programming model for fine-grained computations. This talk is intended as a tutorial, in which I will present lessons learned on how *not* to program a GPU. I will focus on three key aspects: performance, program abstractions and software engineering. Together we will build the fastest General Matrix-Multiplication (GEMM) kernel, ever.
+
+## General Advice
+Check the availability of the meeting rooms before deciding on a date (and requesting different times from your committee members.)
 
 # Invitation
 ```
